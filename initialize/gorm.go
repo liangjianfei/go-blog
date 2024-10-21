@@ -11,7 +11,7 @@ import (
 	"os"
 )
 
-// 初始化mysql客户端
+// InitGorm 初始化mysql客户端
 func InitGorm() {
 	mysqlConfig := global.GvaConfig.Mysql
 	// user:pass@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local

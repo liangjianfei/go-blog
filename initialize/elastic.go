@@ -5,9 +5,10 @@ import (
 	"github.com/liangjianfei/go-blog/global"
 	"github.com/olivere/elastic/v7"
 	"log"
+	"os"
 )
 
-// 创建es客户端
+// InitES 创建es客户端
 func InitES() {
 	// 配置
 	elasticConfig := global.GvaConfig.Elastic

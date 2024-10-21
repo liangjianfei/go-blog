@@ -1,7 +1,9 @@
 package global
 
 import (
+	"github.com/go-redis/redis/v8"
 	"github.com/liangjianfei/go-blog/config"
+	"github.com/olivere/elastic/v7"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 )

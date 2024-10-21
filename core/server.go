@@ -9,7 +9,7 @@ import (
 )
 
 func RunServer() {
-	engine := gin.new()
+	engine := gin.New()
 	// 注册公共中间件
 	engine.Use(gin.Recovery())
 	// 获取自定义http配置

@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func InitConfig() {
+func InitViperConfig() {
 	var configFile string
 	// 读取配置文件优先级: 命令行 > 默认值
 	flag.StringVar(&configFile, "c", global.ConfigFile, "配置配置")
