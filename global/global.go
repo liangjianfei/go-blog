@@ -4,6 +4,7 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/liangjianfei/go-blog/config"
 	"github.com/olivere/elastic/v7"
+	"github.com/songzhibin97/gkit/cache/local_cache"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 )
@@ -19,4 +20,5 @@ var (
 	GvaMysqlClient *gorm.DB            //Mysql客户端
 	GvaRedis       *redis.Client       //Redis客户端
 	GvaElastic     *elastic.Client     // ES客户端
+	BlackCache     local_cache.Cache
 )

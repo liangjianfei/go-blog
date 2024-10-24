@@ -66,3 +66,7 @@ func Error(ctx *gin.Context, msg string) {
 func ErrorWithToken(ctx *gin.Context, msg string) {
 	ResultJson(ctx, TOKEN_EXIPRE, msg, map[string]interface{}{})
 }
+
+func FailWithMessage(ctx *gin.Context, msg string) {
+	ResultJson(ctx, ERROR, msg, map[string]interface{}{})
+}
