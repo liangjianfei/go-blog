@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// 重写gorm.Model
+// BaseModel 重写gorm.Model
 type BaseModel struct {
 	ID        uint           `json:"id" gorm:"primarykey"`
 	CreatedAt time.Time      `json:"createdAt"`

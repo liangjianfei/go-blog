@@ -6,7 +6,7 @@ import (
 	"github.com/liangjianfei/go-blog/utils/response"
 )
 
-// 配置信息
+// GetConfig 配置信息
 func GetConfig(ctx *gin.Context) {
 	response.OkWithData(ctx, global.GvaConfig)
 }

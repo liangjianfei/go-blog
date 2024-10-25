@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-// 验证redis
+// RdTest 验证redis
 func RdTest(ctx *gin.Context) {
 	method, _ := ctx.GetQuery("type")
 	var result string
